@@ -1,28 +1,98 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Ma première page</title>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-            <link rel="stylesheet" href="style.css">
-              <!-- Compiled and minified CSS -->
-            <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+<body>
 
-            <!-- Compiled and minified JavaScript -->
-          <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
-        </head>
-        <body>
-            <h1>Hello Teacher</h1>
+    <!-- HEADER -->
+    <header>
+        <img src="image/logo.jpg" alt="Logo" class="logo">
 
-            <div>
-                <div>
-                <div>
-                    <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN_BDkruEGlGCRPnrid0J8jbZsntz_9G79sA&s" class="responsive-img"> <!-- notice the "circle" class -->
-                    <p>Nous somme un école d'élite</p>
-                    </div>
-                    
-                </div>
-                </div>
-            </div>
-        </body>
-    </html>
+        <!-- MENU -->
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECTION ACCUEIL -->
+    <section id="accueil" class="hero">
+        <div class="hero-text name">
+            <h1>Bienvenue sur mon site</h1>
+            <h1>KONE TCHJIMA</h1>
+            <p>Je suis passionné(e) par lla cybersécurité, l'architecture Cloud, le développement et l’univers du numérique.  
+               Découvrez mon parcours et ma spécialisation.</p>
+        </div>
+        <img src="image/illustration1.jpg" alt="Illustration Cloud" class="hero-img">
+    </section>
+
+    <!-- SECTION PARCOURS -->
+    <section class="parcours">
+        <h2>Mon Parcours</h2>
+        <p>
+            Actuellement en formation, je me spécialise en <strong>Cybersécurité et Cloud Computing</strong>.  
+            J’apprends à manier les outils d'un analyste SOC, les services AWS, la gestion de réseaux cloud, le DevOps, l'IA associé a un domaine et les bonnes pratiques de sécurité.
+        </p>
+
+        <p>
+            J’ai également un intérêt pour le développement web et l’IA.  
+            Mon objectif est de devenir un professionnel polyvalent et capable de créer des solutions modernes et efficaces.
+        </p>
+    </section>
+
+    <!-- SECTION PARCOURS ICONES + CONTACT -->
+<section id="" class="">
+    
+    <!-- Icônes de parcours -->
+    <div class="skills-icons">
+        <div class="skill">
+            <img src="image/cyber.png" alt="Cybersécurité">
+            <p>Cybersécurité</p>
+        </div>
+        <div class="skill">
+            <img src="image/devops.png" alt="DevOps">
+            <p>DevOps</p>
+        </div>
+        <div class="skill">
+            <img src="image/cloud.png" alt="Cloud">
+            <p>Cloud</p>
+        </div>
+        <div class="skill">
+            <img src="image/devweb.png" alt="Dév Web">
+            <p>Dév Web</p>
+        </div>
+    </div>
+
+   
+
+</section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        
+
+        <h2>Contact</h2>
+        <p>Vous souhaitez échanger avec moi ?</p>
+
+        <div class="contact-box">
+            <p><strong>Email :</strong> kiragniry.kone@form.ceditech.ci</p>
+            <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/tchjima-kone-190014144">www.linkedin.com/in/tchjima-kone-190014144</a></p>
+            <p><strong>Site web :</strong> <a href="https://konetchjima.com/">https://konetchjima.com/</a></p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 - Mon Portfolio. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

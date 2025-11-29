@@ -1,28 +1,143 @@
+/* Style global */
 body {
-    background-color: #908888;
-    font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f7;
+    color: #333;
 }
- 
+
+/* Header */
 header {
-    background-color: #2c3e50;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #0d6efd;
+    color: white;
 }
- 
+
 .logo {
+    width: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: white;
+}
+
+.hero-img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.hero-text {
+    width: 45%;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    color: #0d6efd;
+}
+
+.name h2 {
+    color: #fd950d !important;
+}
+
+/* Parcours */
+.parcours {
+    background-color: #ffffff;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.parcours h2 {
+    color: #0d6efd;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+    padding: 40px;
+    background: #e9eef2;
+}
+
+.contact h2 {
+    color: #0d6efd;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #0d6efd;
+    color: white;
+}
+
+/* Icônes parcours */
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill img {
+    width: 60px;
     height: 60px;
+    object-fit: contain;
+    margin-bottom: 8px;
 }
- 
-h1 {
-    color: #2c3e50;
-    font-size: 48px;
-    margin-top: 20px;
+
+.skill p {
+    font-size: 0.9em;
+    color: #333;
+    font-weight: bold;
 }
- 
-p {
-    font-size: 20px;
-    color: #34495e;
-    margin: 20px;
+
+/* Nouvelle zone contact */
+.contact {
+    text-align: center;
+    padding: 50px;
+    background: #e9eef2;
+    border-top: 3px solid #0d6efd;
+}
+
+.contact-box {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid #d1d7dd;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.contact-box p {
+    margin: 10px 0;
+    font-size: 1em;
 }
