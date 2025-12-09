@@ -1,98 +1,369 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Ton Nom</title>
+  <meta name="description" content="Portfolio de Ton Nom — Cloud, Data Engineering & Cybersécurité" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root{
+      --bg:#f6f8fb; --card:#ffffff; --accent:#0057d9; --muted:#6b7280;
+      --radius:12px; --max-width:1100px; --glass: rgba(255,255,255,0.7);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color-scheme: light;
+    }
+   
+  </style>
 </head>
-
 <body>
-
-    <!-- HEADER -->
+  <div class="wrap">
     <header>
-        <img src="image/logo.jpg" alt="Logo" class="logo">
+      <div class="brand">
+        <div class="logo">TK</div>
+        <div>
+          <h1>Tchjima KONE</h1>
+          <div class="small">Cybersécurité · Cloud · Data Engineering · Full Stack · IA/ML</div>
+        </div>
+      </div>
 
-        <!-- MENU -->
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav aria-label="menu principal">
+        <a href="#home">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#skills">Compétences</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
     </header>
 
-    <!-- SECTION ACCUEIL -->
-    <section id="accueil" class="hero">
-        <div class="hero-text name">
-            <h1>Bienvenue sur mon site</h1>
-            <h1>KONE TCHJIMA</h1>
-            <p>Je suis passionné(e) par lla cybersécurité, l'architecture Cloud, le développement et l’univers du numérique.  
-               Découvrez mon parcours et ma spécialisation.</p>
+    <main id="home">
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="info">
+          <h2>Bonjour — je suis <span style="color:var(--accent)">Tchjima KONE</span></h2>
+          <p>Je suis étudiant à CEDITECH, centre basé à ABIDJAN. Ce portfolio est construit pour présenter l'ensemble des activités et labs effectués lors de ce bootcamps: des solutions Cloud robustes, des pipelines data et des architectures sécurisées.</p>
+          <div class="actions">
+            <a href="#projects" class="btn">Voir mes projets</a>
+            <a href="#contact" class="btn alt">Me contacter</a>
+          </div>
         </div>
-        <img src="image/illustration1.jpg" alt="Illustration Cloud" class="hero-img">
-    </section>
+        <aside style="width:280px">
+          <div class="card" role="status" aria-live="polite">
+            <h3>Infos rapides</h3>
+            <p class="small"><strong>Rôle souhaité :</strong> Ingénieur Cloud / Data Engineer</p>
+            <p class="small"><strong>Email :</strong> ton.email@exemple.ci</p>
+            <div style="margin-top:8px" class="small"><strong>Compétences clés</strong>
+              <div class="skills" style="margin-top:8px">
+                <div class="skill">AWS</div>
+                <div class="skill">DynamoDB</div>
+                <div class="skill">GitHub Actions</div>
+                <div class="skill">Python</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
 
-    <!-- SECTION PARCOURS -->
-    <section class="parcours">
-        <h2>Mon Parcours</h2>
-        <p>
-            Actuellement en formation, je me spécialise en <strong>Cybersécurité et Cloud Computing</strong>.  
-            J’apprends à manier les outils d'un analyste SOC, les services AWS, la gestion de réseaux cloud, le DevOps, l'IA associé a un domaine et les bonnes pratiques de sécurité.
-        </p>
+      <!-- ABOUT -->
+      <section id="about" style="display:grid;grid-template-columns:1fr 320px;gap:18px">
+        <div class="card">
+          <h3>À propos de moi</h3>
+          <p class="small">Ancien infographe devenu responsable opérationnel dans une entreprise de sécurité privée, je me suis reconverti vers le Cloud, la cybersécurité et le data engineering. Mes labs m'ont permis d'acquérir des compétences pratiques : déploiement d'apps, CI/CD, sécurisation d'environnements et manipulation de données.</p>
+          <h4 style="margin-top:12px">Objectifs</h4>
+          <ul class="small">
+            <li>Devenir ingénieur Cloud certifié</li>
+            <li>Concevoir des pipelines data résilients</li>
+            <li>Assurer la sécurité des architectures cloud</li>
+          </ul>
+        </div>
 
-        <p>
-            J’ai également un intérêt pour le développement web et l’IA.  
-            Mon objectif est de devenir un professionnel polyvalent et capable de créer des solutions modernes et efficaces.
-        </p>
-    </section>
+        <div>
+          <div class="card">
+            <h3>Certifications & Labs</h3>
+            <p class="small">CSCU ✓ — Labs réalisés : CI/CD, DynamoDB form, API Gateway + Lambda, Monitoring, Security basics.</p>
+            <div style="margin-top:10px" class="small"><strong>Langues :</strong> Français (natif), Anglais (professionnel)</div>
+          </div>
+        </div>
+      </section>
 
-    <!-- SECTION PARCOURS ICONES + CONTACT -->
-<section id="" class="">
+      <!-- PROJECTS -->
+      <section id="projects">
+        <h2 style="margin-bottom:12px">Projets & Labs</h2>
+
+        <h2 style="margin-bottom:12px">Semaine 1</h2> 
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card card" aria-labelledby="p1">
+            <h3 id="p1">JOUR 1</h3>
+            <div class="project-hero">LAB 1 - Auto-Evaluation</div>
+            <h3 id="p1">Objectifs de l'étudiant</h3>
+            <p class="small">Réponse a une série de question d'auto-évaluation</p>
+            <div class="tags">
+              <span class="tag">Google Docx</span>
+             <!-- <span class="tag">CI/CD</span> -->
+            </div>
+            <p style="margin-top:8px" class="small"><a href="https://ceditech-my.sharepoint.com/:b:/g/personal/kiragniry_kone_form_ceditech_ci/IQA52_yn1CZSQ6xZ3gIX6PnMAbB8dLospJE0RaOMFrcwYyk?e=bTxZW3" target="_blank">Voir le PDF</a></p>
+          </article>
+          
+
+          <!-- Project 2 -->
+          <article class="project-card card" aria-labelledby="p2">
+            <h3 id="p2">JOUR 2</h3>
+            <div class="project-hero">LAB 2 - Architecture cloud </div>
+            <h3 id="p2">Circulation du flux de données</h3>
+            <p class="small">Le Lab consistait à representer la circulation de l'information dans une architecture cloud à travers un schéma representatif.</p>
+            <div class="tags">
+             <!-- <span class="tag">AWS</span> -->
+             <!-- <span class="tag">DynamoDB</span> -->
+            </div>
+            <p style="margin-top:8px" class="small"><a href="https://ceditech-my.sharepoint.com/:i:/g/personal/kiragniry_kone_form_ceditech_ci/IQDF1sWkSkJASJsJ8_237sLKAeW8v56eRP9kR9s9uXnZsk8?e=xzpu0f" target="_blank">Voir l'architecture</a></p>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card card" aria-labelledby="p3">
+            <h3 id="p3">JOUR 3</h3>
+            <div class="project-hero">LAB 3 - Installation de Machine virtuelle</div>
+            <h3 id="p3">Systeme d'exploitation</h3>
+            <p class="small">Le LAB consistait a installer une machine virtuelle (VIRTUAL BOX) et à y installer une machine UBUNTU 24.4 et un WINDOWS 10.</p>
+            <div class="tags">
+              <span class="tag">Virtual BOX</span>
+              <span class="tag">UBUNTU 24.04</span>
+              <span class="tag">WINDOWS 10</span>
+            </div>
+            <p style="margin-top:8px" class="small"><a href="https://ceditech-my.sharepoint.com/:b:/g/personal/kiragniry_kone_form_ceditech_ci/IQDdebCmeuutT7Knxwu-wfwBAcBP1HJNtPxIZrAthijV7ww?e=pUCWOh" target="_blank">Voir la capture</a></p>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card card" aria-labelledby="p4">
+            <h3 id="p4">JOUR 4</h3>
+            <div class="project-hero">LAB 4 - LAN (Local Area Network)</div>
+            <h3 id="p4">Conception D'un LAN</h3>
+            <p class="small">La présentation d'un LAN composé de 1 serveur, 1 routeur, 1 switch, 2 points d’accès, 10 machines, 15 utilisateurs.</p>
+            <div class="tags">
+            <!--  <span class="tag">ETL</span> -->
+            <!--  <span class="tag">Python</span> --> 
+            </div>
+            <p style="margin-top:8px" class="small"><a href="https://ceditech-my.sharepoint.com/:i:/g/personal/kiragniry_kone_form_ceditech_ci/IQCkPzs3ofXoQ4K2wxjfGzf2AUNDjYICO5lg5kySY2ysAp4?e=ZyYegm" target="_blank">Voir l'architecture</a></p>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card card" aria-labelledby="p5">
+            <h3 id="p5">JOUR 5</h3>
+            <div class="project-hero">LAB 5 - Gestion</div>
+            <h3 id="p5">Crée un projet dans planneur</h3>
+            <p class="small">le LAB consiste à créer un projet dans Microsoft Planner pour organiser des tâches et des ressources.</p>
+            <div class="tags">
+            <span class="tag">Microsoft Planner</span> 
+            <!--  <span class="tag">Python</span> --> 
+            </div>
+            <p style="margin-top:8px" class="small"><a href="https://ceditech-my.sharepoint.com/:i:/g/personal/kiragniry_kone_form_ceditech_ci/IQAjNetHCAllTIsg_PrA_6UeAW_uWCrImotAlVpF_RB1Q4I?e=GeIpQP" target="_blank">Voir la capture</a></p>
+          </article>
+        </div>
+
+
+        <h2 style="margin-bottom:12px">Semaine 2</h2> 
+
+          <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card card" aria-labelledby="p1">
+            <h3 id="p1">JOUR 1</h3>
+            <div class="project-hero">LAN – Réseautage Cloud - Sécurité</div>
+            <h3 id="p1">LAB 3 :Simulation de sécurité cloud (IAM + durcissement EC2) <hr>
+            LAB 1 - Explorer les composants du réseau cloud <hr>
+            LAB 2 - Comparaison Packet Tracer + AWS
+            </h3>
+            <p class="small"> Initier les apprenants aux principes fondamentaux de l’infrastructure cloud en
+construisant un réseau cloud basique, en comparant le réseau traditionnel et le réseau cloud, en
+appliquant des contrôles de sécurité essentiels</p>
+            <div class="tags">
+              <span class="tag">AWS IAM</span>
+              <span class="tag">EC2</span> 
+              <span class="tag">Rôle</span> 
+             <span class="tag">VPC</span> 
+             <span class="tag"> sous reseaux</span> 
+             <span class="tag">IGW</span> 
+             <span class="tag">Routage</span> 
+            </div>
+            <p style="margin-top:8px" class="small"><a href="https://ceditech-my.sharepoint.com/:b:/g/personal/kiragniry_kone_form_ceditech_ci/IQDv3kPgqSz7SbyGjs5wlGA1Aa0tHB-Gfpw9acxf4Gg2VMk?e=U9yCqG" target="_blank">Voir le LAB</a> </p>
+          </article>
+          
+
+          <!-- Project 2 -->
+          <article class="project-card card" aria-labelledby="p2">
+            <h3 id="p2">JOUR 2</h3>
+            <div class="project-hero">Infrastructure & Sécurité + Matrice de Sélection de Parcours </div>
+            <h3 id="p2">Auto-Evaluation</h3>
+            <p class="small">Aider les étudiants à évaluer le parcours IT le plus adapté à l’aide de la Track Selection Matrix,
+tout en découvrant les bases des outils de sécurité cloud et en réfléchissant à leur intérêt pour
+les métiers d’infrastructure</p>
+            <div class="tags">
+             <span class="tag">Google sheets</span>
+             <span class="tag">Google Docx</span>
+            </div>
+            <p style="margin-top:8px" class="small"><a href="https://ceditech-my.sharepoint.com/:b:/g/personal/kiragniry_kone_form_ceditech_ci/IQCBH41Ai1AYTphVPJa_2sHuAefoR2CGsrryzSQK5Y4LpR0?e=uR7xhz" target="_blank">Voir le LAB 5 & 6</a></p>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card card" aria-labelledby="p3">
+            <h3 id="p3">JOUR 3</h3>
+            <div class="project-hero">Deployer un Site Vitrine (CI/CD) & Architecture Cloud</div>
+            <h3 id="p3">LAB 8-9 — Créer et Déployer un Site Vitrine (HTML & CSS) avec AWS Amplify <hr>
+            LAB 10 — Simulation d’Architecture Cloud</h3>
+            <p class="small">Lab 8-9 : Créer un site vitrine en utilisant uniquement HTML et CSS. <hr>
+                lAB 10:  Simulation d’Architecture Cloud</p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">AWS Amplify</span>
+            </div>
+
+            <p class="small">
+
+                <h3>PARTIE 1</h3>
+                <h4>Livrables :</h4>
+                <span>• Lien vers votre site déployé : <a href="https://main.d1aomhv9y0n3ss.amplifyapp.com/" target="_blank">https://main.d1aomhv9y0n3ss.amplifyapp.com/</a></span>
+                <span>• Lien vers votre dépôt GitHub contenant votre code déployé :<a href="https://github.com/juju911/portfolioceditech" target="_blank">https://github.com/juju911/portfolioceditech</a></span>
+            </p>
+            
+            <p style="margin-top:8px" class="small"><a href="https://ceditech-my.sharepoint.com/:b:/g/personal/kiragniry_kone_form_ceditech_ci/IQCL5oYwr5TXRLXMapPBgHyTAQDP6ey3-IQjHWtapTU4KxY?e=vfGcK0" target="_blank">Voir le LAB 8 & 9</a>   
+                                                    <a href="https://ceditech-my.sharepoint.com/:b:/g/personal/kiragniry_kone_form_ceditech_ci/IQCZlfSai1anRraHOm-iZX9dAfzbLNkQfpyk-c2fFC1Qh0Y?e=tFkbjV" target="_blank">Voir le LAB 10</a></p>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card card" aria-labelledby="p4">
+            <h3 id="p4">JOUR 4</h3>
+            <div class="project-hero">Exploration Approfondie du Pilier 2 + Notation de la Matrice</div>
+            <h3 id="p4">Auto evaluation (Matrice) & Démonstration du Workflow de Développement Cloud</h3>
+            <p class="small">Aider les apprenants à affiner leur choix de parcours IT en s’auto-évaluant sur la base
+des labs précédents. <hr>
+Lab 12 — Démonstration du Workflow de Développement Cloud <hr>
+Lab 13 — Session de Notation de la Matrice de Sélection de Parcours <hr>
+Lab 14 — Auto-évaluation : Est-ce que j’aime construire / développer ?</p>
+            <div class="tags">
+            <span class="tag">GitHub</span> 
+            <span class="tag">GitHub Actions</span>
+            </div>
+            <p style="margin-top:8px" class="small"><a href="https://ceditech-my.sharepoint.com/:b:/g/personal/kiragniry_kone_form_ceditech_ci/IQAfUrd6iVmTToxl7HHG-unRATh6ELPbBod1HgMv3SJO870?e=9EMnpT" target="_blank">Voir le LAB 12 & 14</a>
+            <a href="https://ceditech-my.sharepoint.com/:b:/g/personal/kiragniry_kone_form_ceditech_ci/IQDQlyg3SbWxR476EzgQ7TqDAWgQczwiRJzSsw3OCE83Whs?e=axnrqF" target="_blank">Voir la matrice de selection</a></p>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card card" aria-labelledby="p5">
+            <h3 id="p5">JOUR 5</h3>
+            <div class="project-hero">Données & Stratégie numérique</div>
+            <h3 id="p5">Travailler avec des données infonuagiques.</h3>
+            <p class="small">LAB 16 — Laboratoire sur les outils infonuagiques de marketing numérique <hr>
+            LAB 17 — Création d’un tableau de bord de données <hr>
+        LAB 18 — Sélection finale des parcours (basée sur la matrice) <hr>
+    LAB 19 - Portefolio</p>
+            <div class="tags">
+            <span class="tag">Google analytics</span> 
+            <span class="tag">Power BI</span> 
+            </div>
+            <p style="margin-top:8px" class="small"><a href="#" target="_blank">Voir les LABS 16, 17, 18 & 19</a></p>
+          </article>
+        </div>
+
+
+      </section>
+
     
-    <!-- Icônes de parcours -->
-    <div class="skills-icons">
-        <div class="skill">
-            <img src="image/cyber.png" alt="Cybersécurité">
-            <p>Cybersécurité</p>
+
+      <!-- SKILLS -->
+      <section id="skills" style="margin-top:18px">
+        <h2 style="margin-bottom:12px">Compétences</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Cloud</h3>
+            <p class="small">AWS (Amplify, Lambda, API Gateway, S3), VPC basics, IAM.</p>
+          </div>
+          <div class="card">
+            <h3>Data Engineering</h3>
+            <p class="small">ETL, manipulation de données, DynamoDB, S3, scripts Python.</p>
+          </div>
+          <div class="card">
+            <h3>Cybersécurité</h3>
+            <p class="small">Gestion des accès, bonnes pratiques, monitoring, durcissement basique.</p>
+          </div>
         </div>
-        <div class="skill">
-            <img src="image/devops.png" alt="DevOps">
-            <p>DevOps</p>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" style="margin-top:18px;display:grid;grid-template-columns:1fr 360px;gap:18px">
+        <div class="card">
+          <h3>Contact</h3>
+          <p class="small">Utilise le formulaire ci-dessous ou contacte-moi par email.</p>
+
+          <!-- Simple contact form using mailto (no backend) -->
+          <!-- Replace the mailto address by your email -->
+          <form action="mailto:ton.email@exemple.ci" method="post" enctype="text/plain" aria-label="Formulaire de contact">
+            <div class="row">
+              <div class="col">
+                <label for="nom">Nom</label>
+                <input id="nom" name="nom" type="text" required>
+              </div>
+              <div class="col">
+                <label for="prenom">Prénom</label>
+                <input id="prenom" name="prenom" type="text" required>
+              </div>
+            </div>
+
+            <label for="sujet">Sujet</label>
+            <input id="sujet" name="sujet" type="text" required>
+
+            <label for="numero">Numéro</label>
+            <input id="numero" name="numero" type="tel" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Votre message..."></textarea>
+
+            <button type="submit" class="btn" style="margin-top:10px">Envoyer</button>
+          </form>
         </div>
-        <div class="skill">
-            <img src="image/cloud.png" alt="Cloud">
-            <p>Cloud</p>
-        </div>
-        <div class="skill">
-            <img src="image/devweb.png" alt="Dév Web">
-            <p>Dév Web</p>
-        </div>
-    </div>
 
-   
+        <aside class="card">
+          <h3>Me contacter</h3>
+          <p class="small"><strong>Email :</strong> ton.email@exemple.ci</p>
+          <p class="small"><strong>Téléphone :</strong> +225 00 00 00 00</p>
+          <p class="small"><strong>LinkedIn :</strong> <a href="#" target="_blank">ton-profil</a></p>
+          <div style="margin-top:12px">
+            <h4 style="margin:0 0 8px">CV</h4>
+            <a href="#" class="btn alt" style="display:inline-block;text-decoration:none">Télécharger CV (PDF)</a>
+          </div>
+        </aside>
+      </section>
 
-</section>
+    </main>
 
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-        
-
-        <h2>Contact</h2>
-        <p>Vous souhaitez échanger avec moi ?</p>
-
-        <div class="contact-box">
-            <p><strong>Email :</strong> kiragniry.kone@form.ceditech.ci</p>
-            <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/tchjima-kone-190014144">www.linkedin.com/in/tchjima-kone-190014144</a></p>
-            <p><strong>Site web :</strong> <a href="https://konetchjima.com/">https://konetchjima.com/</a></p>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
     <footer>
-        <p>© 2025 -  Mon Portfolio. Tous droits réservés.</p>
+      © <span id="year"></span> Ton Nom — Déployé avec ❤ — <a href="#" style="color:var(--accent);text-decoration:none">Mentions</a>
     </footer>
+  </div>
 
+  <script>
+    // Small niceties
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Optional: improve mailto payload (transform fields into message body)
+    // Browser's native mail client will open on submit; this is optional and simple.
+    (function(){
+      const form = document.querySelector('form[action^="mailto:"]');
+      if(!form) return;
+      form.addEventListener('submit', function(e){
+        // Construct mailto with subject/body (the form's default submit will open mail client)
+        const to = form.action.replace('mailto:','');
+        const nom = encodeURIComponent(form.nom.value || '');
+        const prenom = encodeURIComponent(form.prenom.value || '');
+        const sujet = encodeURIComponent(form.sujet.value || 'Contact portfolio');
+        const numero = encodeURIComponent(form.numero.value || '');
+        const message = encodeURIComponent(form.message.value || '');
+        const body = encodeURIComponent(`Nom: ${form.nom.value}\nPrénom: ${form.prenom.value}\nTéléphone: ${form.numero.value}\n\nMessage:\n${form.message.value}`);
+        // Set action to prefilled mailto
+        form.action = `mailto:${to}?subject=${sujet}&body=${body}`;
+        // Allow native submit to proceed
+      });
+    })();
+  </script>
 </body>
-</html
+</html>
